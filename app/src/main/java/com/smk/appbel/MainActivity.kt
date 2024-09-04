@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(diklat)
         }
         binding.cardPlay.setOnClickListener{
-            val play = Intent(this@MainActivity, PlayListActivity::class.java)
+            val play = Intent(this@MainActivity, MusikActivity::class.java)
             startActivity(play)
         }
         binding.btfb.setOnClickListener{

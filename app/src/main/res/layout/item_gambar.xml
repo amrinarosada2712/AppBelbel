@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AF8888"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:text="Play List"/>
+
+    <ImageView
+        android:id="@+id/imgAngka"
+        android:layout_width="match_parent"
+        android:layout_height="313dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="177dp"
+        android:layout_marginEnd="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/indonesiaraya" />
+
+    <LinearLayout
+        android:id="@+id/conHuruf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="#1B5E94">
+
+        <TextView
+            android:id="@+id/tvHuruf"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="italic"
+            android:text="Indonesia Raya"/>
+
+        <ImageView
+            android:id="@+id/imgReplay"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="25dp"
+            android:src="@drawable/audio"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
