@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/header" />
+
+    <ViewFlipper
+        android:layout_width="wrap_content"
+        android:id="@+id/image_phone"
+        android:layout_height="200dp"
+        android:autoStart="true"
+        android:flipInterval="4000"
+        android:inAnimation="@android:anim/slide_in_left"
+        android:outAnimation="@android:anim/slide_out_right">
+
+        <ImageView
+            android:id="@+id/imgslide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bbbl" />
+
+        <ImageView
+            android:id="@+id/imgslide1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bblsatu" />
+
+        <ImageView
+            android:id="@+id/imgslide2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bbldua" />
+        <ImageView
+            android:id="@+id/imgslide3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bbltuga" />
+        <ImageView
+            android:id="@+id/imgslide4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bblempat" />
+        <ImageView
+            android:id="@+id/imgslide5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bbllima" />
+
+    </ViewFlipper>
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:id="@+id/cardDiklat"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/listImage"
+                android:src="@drawable/d"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:id="@+id/diklat"
+                android:text="Diklat"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/listImage"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:id="@+id/cardPlay"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/play"
+                android:src="@drawable/p"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:id="@+id/playlist"
+                android:text="Play List"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/play"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:id="@+id/cardAbout"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/about"
+                android:src="@drawable/a"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:id="@+id/abouut"
+                android:text="About"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="30dp"
+                android:layout_toEndOf="@id/about"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/btig"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/ig" />
+
+        <ImageView
+            android:id="@+id/btwa"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/wa" />
+        <ImageView
+            android:id="@+id/btfb"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:src="@drawable/fb"/>
+        <ImageView
+            android:id="@+id/btweb"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:src="@drawable/web"/>
+
+        <ImageView
+            android:id="@+id/bty"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:src="@drawable/y"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp">
+        <ImageView
+            android:id="@+id/btmaps"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/maps"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHighlight="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/btmaps"
+            android:text="Jl. Setia Budi No.75 20154 Kota Medan Sumatera Utara "
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
